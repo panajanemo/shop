@@ -58,14 +58,14 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
 //        strategy.setInclude("base_brand");
 //        strategy.setInclude("base_category1","base_category2","base_category3","platform_property_key","platform_property_value");
-        strategy.setInclude("base_category1","base_category2","base_category3");
-        //strategy.setInclude("platform_property_name","platform_property_value","base_brand");
-        //strategy.setInclude("product_spu","spu_sale_property_name","spu_sale_property_value","product_image");
-        //strategy.setInclude("base_sale_property");
-        //strategy.setInclude("sku_info","sku_platform_property_value","sku_sale_property_value","sku_image");
-        //strategy.setInclude("base_category_view");
-        //strategy.setInclude("user_info","user_address");
-        //strategy.setInclude("cart_info","order_detail","order_info","payment_info");
+//        strategy.setInclude("base_category1","base_category2","base_category3");
+//        strategy.setInclude("platform_property_key","platform_property_value");
+        //strategy.setInclude("product_spu","product_sale_property_key","product_sale_property_value","product_image","base_sale_property");
+//        strategy.setInclude("base_sale_property");
+        strategy.setInclude("sku_info","sku_platform_property_value","sku_sale_property_value","sku_image");
+//        strategy.setInclude("base_category_view");
+//        strategy.setInclude("user_info","user_address");
+//        strategy.setInclude("cart_info","order_detail","order_info","payment_info");
 //        strategy.setInclude("seckill_product");
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(packageConfig.getModuleName() + "_"); //生成实体时去掉表前缀

@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb5d4a27-1b21-4ff6-b82b-95407f4eef37" name="Default Changelist" comment="" />
+    <list default="true" id="cb5d4a27-1b21-4ff6-b82b-95407f4eef37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shop_gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/entity/BaseBrand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/ProductApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/ProductApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/BaseBrandController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/PlatformPropertyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/PlatformPropertyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/entity/BaseBrand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/PlatformPropertyKeyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/PlatformPropertyKeyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/PlatformPropertyKeyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/PlatformPropertyKeyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_mbg/src/main/java/com/atguigu/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_mbg/src/test/java/com/atguigu/CodeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_mbg/target/test-classes/com/atguigu/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_mbg/target/test-classes/com/atguigu/CodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_model/src/main/java/com/atguigu/entity/BaseSaleProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_model/src/main/java/com/atguigu/entity/BaseSaleProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_model/target/classes/com/atguigu/entity/BaseSaleProperty.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_model/target/classes/com/atguigu/entity/BaseSaleProperty.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +102,9 @@
       <replace>10.211.55.6</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -128,6 +151,11 @@
         <option name="userSettingsFile" value="D:\Java\apache-maven-3.8.7\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -152,6 +180,9 @@
     <option name="height" value="784" />
   </component>
   <component name="ProjectId" id="2LSHxDXcWxri01QBbstNA3XndOl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -356,22 +387,40 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/BaiduNetdiskDownload/谷粒商城/项目/day03/代码/shop_parent/shop_mbg",
+    "jdk.selected.JAVA_MODULE": "1.8.0_211",
+    "last_opened_file_path": "E:/ideaProject/shop_parent",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.59153634",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "ad02eb7367f38a2452300d39e4fa28b1",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "e616f928da9b8ac2ee17ef9233c9b3c4",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\BaiduNetdiskDownload\谷粒商城\项目\day03\代码\shop_parent\shop_mbg" />
+      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\java\com\atguigu" />
+      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\test\java\com\atguigu" />
+      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\resources" />
+      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\java\com\atguigu\service\impl" />
+      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\java\com\atguigu\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\java\com\atguigu\controller" />
+      <recent name="E:\ideaProject\shop_parent\shop_gateway\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.service.impl" />
+      <recent name="com.atguigu.service" />
+      <recent name="com.atguigu.mapper" />
+      <recent name="com.atguigu.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -385,6 +434,19 @@
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.CodeGenerator" />
       <module name="shop_mbg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUploader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.FileUploader" />
+      <module name="shop_product" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.*" />
@@ -423,19 +485,24 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.FileUploader" />
       <item itemvalue="Application.CodeGenerator" />
-      <item itemvalue="Spring Boot.ProductApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ProductApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ProductApplication" />
         <item itemvalue="Application.CodeGenerator" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Application.FileUploader" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -450,6 +517,28 @@
       <workItem from="1661474324891" duration="14516000" />
       <workItem from="1675857809358" duration="203000" />
       <workItem from="1675862264955" duration="1858000" />
+      <workItem from="1675871746712" duration="779000" />
+      <workItem from="1675916831178" duration="2499000" />
+      <workItem from="1676005534451" duration="7641000" />
+      <workItem from="1676027826691" duration="2941000" />
+      <workItem from="1676108984343" duration="14271000" />
+      <workItem from="1676179078610" duration="2157000" />
+      <workItem from="1676205008554" duration="3591000" />
+      <workItem from="1676212624056" duration="806000" />
+      <workItem from="1676213743162" duration="865000" />
+      <workItem from="1676214807404" duration="3358000" />
+      <workItem from="1676224652309" duration="180000" />
+      <workItem from="1676262222081" duration="605000" />
+      <workItem from="1676311867096" duration="896000" />
+      <workItem from="1676349876173" duration="4810000" />
+      <workItem from="1676473587725" duration="3727000" />
+      <workItem from="1676553387690" duration="10399000" />
+      <workItem from="1676800225174" duration="4932000" />
+      <workItem from="1676862686918" duration="17857000" />
+      <workItem from="1676944278038" duration="1432000" />
+      <workItem from="1676950648400" duration="4431000" />
+      <workItem from="1676961326315" duration="2607000" />
+      <workItem from="1676971438809" duration="2686000" />
     </task>
     <servers />
   </component>
@@ -536,6 +625,31 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/PlatformPropertyKeyServiceImpl.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/PlatformPropertyKeyServiceImpl.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="propertyValueService" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/shop_utils/shop_web_utils/pom.xml">

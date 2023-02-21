@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop_gateway" />
         <module name="shop_web_utils" />
+        <module name="shop_gateway" />
         <module name="shop_common_utils" />
         <module name="shop_model" />
         <module name="shop_core_utils" />
