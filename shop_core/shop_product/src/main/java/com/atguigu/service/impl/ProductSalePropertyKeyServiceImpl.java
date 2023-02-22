@@ -21,6 +21,6 @@ public class ProductSalePropertyKeyServiceImpl extends ServiceImpl<ProductSalePr
 
     @Override
     public List<ProductSalePropertyKey> querySalePropertyByProductId(Long spuId) {
-        return null;
+        return baseMapper.querySalePropertyByProductId(spuId);
     }
 }

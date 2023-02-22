@@ -42,11 +42,13 @@ public class SpuController {
      * @time 2023/2/20 21:42
      */
     @GetMapping("queryProductSpuByPage/{currentPageNum}/{pageSize}/{category3Id}")
-    public RetVal queryProductSpuByPage(@PathVariable Long currentPageNum, @PathVariable Long pageSize, @PathVariable Long category3Id) {
+    public RetVal queryProductSpuByPage(@PathVariable Long currentPageNum,
+                                        @PathVariable Long pageSize,
+                                        @PathVariable Long category3Id) {
         IPage<ProductSpu> page = new Page<>(currentPageNum, pageSize);
         QueryWrapper<ProductSpu> wrapper = new QueryWrapper<>();
         wrapper.eq("category3_id", category3Id);
-        spuService.page(page, null);
+        spuService.page(page, wrapper);
         return RetVal.ok(page);
     }
 
@@ -57,7 +59,7 @@ public class SpuController {
      * @author panajanemo
      * @time 2023/2/20 21:53
      */
-    @GetMapping("{queryAllSaleProperty}")
+    @GetMapping("queryAllSaleProperty")
     public RetVal queryAllSaleProperty() {
         List<BaseSaleProperty> salePropertyList = salePropertyService.list(null);
         return RetVal.ok(salePropertyList);

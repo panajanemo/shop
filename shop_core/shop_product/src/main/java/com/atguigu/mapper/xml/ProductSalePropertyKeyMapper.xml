@@ -11,15 +11,11 @@
     </resultMap>
 
     <select id="querySalePropertyByProductId" resultMap="salePropertyMap">
-        SELECT a.id,
-               a.product_id,
-               a.sale_property_key_id,
-               a.sale_property_key_name,
-               b.id sale_property_value_id,
-               b.sale_property_value_name
+        SELECT *
         FROM product_sale_property_key a
                  INNER JOIN product_sale_property_value b ON a.product_id = b.product_id
             AND a.sale_property_key_id = b.sale_property_key_id
         WHERE a.product_id = #{spuId}
     </select>
+
 </mapper>

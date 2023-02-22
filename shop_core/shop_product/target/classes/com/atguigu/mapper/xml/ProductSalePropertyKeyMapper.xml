@@ -4,41 +4,18 @@
 
     <resultMap id="salePropertyMap" type="com.atguigu.entity.ProductSalePropertyKey" autoMapping="true">
         <id property="id" column="id"></id>
-        <collection property="salePropertyValueList" ofType="com.atguigu.entity.ProductSalePropertyValue" autoMapping="true">
+        <collection property="salePropertyValueList" ofType="com.atguigu.entity.ProductSalePropertyValue"
+                    autoMapping="true">
             <id property="id" column="sale_property_value_id"></id>
         </collection>
     </resultMap>
 
-    <select id="queryAllSaleProperty" resultMap="salePropertyMap">
-        SELECT
-        a.id,
-        a.product_id,
-        a.sale_property_key_id,
-        a.sale_property_key_name,
-        b.id sale_property_value_id,
-        b.sale_property_value_name
-        FROM
-        product_sale_property_key a
-        INNER JOIN product_sale_property_value b ON a.product_id = b.product_id
-        AND a.sale_property_key_id = b.sale_property_key_id
-        <where>
-            a.product_id = #{spuId}
-        </where>
+    <select id="querySalePropertyByProductId" resultMap="salePropertyMap">
+        SELECT *
+        FROM product_sale_property_key a
+                 INNER JOIN product_sale_property_value b ON a.product_id = b.product_id
+            AND a.sale_property_key_id = b.sale_property_key_id
+        WHERE a.product_id = #{spuId}
     </select>
-    <select id="querySalePropertyByProductId" resultType="com.atguigu.entity.ProductSalePropertyKey">
-        SELECT
-            a.id,
-            a.product_id,
-            a.sale_property_key_id,
-            a.sale_property_key_name,
-            b.id sale_property_value_id,
-            b.sale_property_value_name
-        FROM
-            product_sale_property_key a
-                INNER JOIN product_sale_property_value b ON a.product_id = b.product_id
-                AND a.sale_property_key_id = b.sale_property_key_id
 
-
-
-    </select>
 </mapper>

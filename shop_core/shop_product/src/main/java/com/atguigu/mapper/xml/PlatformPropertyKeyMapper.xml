@@ -19,7 +19,6 @@
             </if>
         </where>
     </select>
-
     <resultMap id="platformPropertyMap" type="com.atguigu.entity.PlatformPropertyKey" autoMapping="true">
         <id property="id" column="id"></id>
         <collection property="propertyValueList" ofType="com.atguigu.entity.PlatformPropertyValue" autoMapping="true">
@@ -52,5 +51,3 @@
         </where>
     </select>
 </mapper>
-
-        <!--or在sql中起连接作用-->

@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5d4a27-1b21-4ff6-b82b-95407f4eef37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shop_gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/entity/BaseBrand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/ProductApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/ProductApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/BaseBrandController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/PlatformPropertyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/PlatformPropertyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/SkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/SkuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/SpuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/mapper/xml/PlatformPropertyKeyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/mapper/xml/PlatformPropertyKeyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/mapper/xml/ProductSalePropertyKeyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/mapper/xml/ProductSalePropertyKeyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/SkuInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/SkuInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/ProductSalePropertyKeyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/ProductSalePropertyKeyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/SkuInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/PlatformPropertyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/PlatformPropertyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/entity/BaseBrand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/SkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/SkuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/SpuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/controller/SpuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/ProductSalePropertyKeyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/ProductSalePropertyKeyMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/PlatformPropertyKeyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/PlatformPropertyKeyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/PlatformPropertyKeyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/PlatformPropertyKeyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_mbg/src/main/java/com/atguigu/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_mbg/src/test/java/com/atguigu/CodeGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_mbg/target/test-classes/com/atguigu/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_mbg/target/test-classes/com/atguigu/CodeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_model/src/main/java/com/atguigu/entity/BaseSaleProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_model/src/main/java/com/atguigu/entity/BaseSaleProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_model/target/classes/com/atguigu/entity/BaseSaleProperty.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_model/target/classes/com/atguigu/entity/BaseSaleProperty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/ProductSalePropertyKeyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/ProductSalePropertyKeyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/ProductSalePropertyKeyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/ProductSalePropertyKeyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/SkuInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/SkuInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/ProductSalePropertyKeyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/ProductSalePropertyKeyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/SkuInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/SkuInfoServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +103,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://D:/Java/maven-repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.33/tomcat-embed-core-9.0.33.jar!/org/apache/catalina/connector/RequestFacade.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -380,27 +382,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8.0_211",
-    "last_opened_file_path": "E:/ideaProject/shop_parent",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.59153634",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "e616f928da9b8ac2ee17ef9233c9b3c4",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8.0_211&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/BaiduNetdiskDownload/谷粒商城/项目/day04/代码/shop_parent&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.59153634&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e616f928da9b8ac2ee17ef9233c9b3c4&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -492,8 +494,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ProductApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.FileUploader" />
       </list>
@@ -539,6 +541,10 @@
       <workItem from="1676950648400" duration="4431000" />
       <workItem from="1676961326315" duration="2607000" />
       <workItem from="1676971438809" duration="2686000" />
+      <workItem from="1676985527779" duration="6893000" />
+      <workItem from="1677001964126" duration="2099000" />
+      <workItem from="1677030202966" duration="5599000" />
+      <workItem from="1677051387057" duration="1766000" />
     </task>
     <servers />
   </component>

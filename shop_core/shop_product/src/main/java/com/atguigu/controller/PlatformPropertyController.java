@@ -48,31 +48,33 @@ public class PlatformPropertyController {
     }
 
     /**
-     * @description 根据平台属性key的id查询平台属性值
      * @param propertyKeyId
      * @return RetVal
+     * @description 根据平台属性key的id查询平台属性值
      * @author panajanemo
      * @time 2023/2/12 0:15
      */
     @GetMapping("getPropertyValueByPropertyKeyId/{propertyKeyId}")
-    public RetVal getPropertyValueByPropertyKeyId(@PathVariable Long propertyKeyId){
+    public RetVal getPropertyValueByPropertyKeyId(@PathVariable Long propertyKeyId) {
         QueryWrapper<PlatformPropertyValue> wrapper = new QueryWrapper<>();
-        wrapper.eq("property_key_id",propertyKeyId);
+        wrapper.eq("property_key_id", propertyKeyId);
         List<PlatformPropertyValue> platformPropertyValueList = propertyValueService.list(wrapper);
         return RetVal.ok(platformPropertyValueList);
     }
 
+    /**
+     * @param platformPropertyKey
+     * @return RetVal
+     * @description 保存/修改平台属性 由于请求是post类型 传的json http://127.0.0.1:8000/product/savePlatformProperty
+     * @author panajanemo
+     * @time 2023/2/22 2:15
+     */
+
     @PostMapping("savePlatformProperty")
-    public RetVal savePlatformProperty(@RequestBody PlatformPropertyKey platformPropertyKey){
-        /**
-         * a.保存平台属性key的名称
-         * b.保存平台属性value的名称
-         * c.由于请求是post类型 传的是json
-         */
+    public RetVal savePlatformProperty(@RequestBody PlatformPropertyKey platformPropertyKey) {
         propertyKeyService.savePlatformProperty(platformPropertyKey);
         return RetVal.ok();
     }
-
 
 }
 
