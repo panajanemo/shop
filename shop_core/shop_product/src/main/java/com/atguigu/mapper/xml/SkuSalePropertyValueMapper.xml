@@ -3,6 +3,7 @@
 <mapper namespace="com.atguigu.mapper.SkuSalePropertyValueMapper">
 
     <select id="getSalePropertyAndSkuIdMapping" resultType="java.util.Map">
+--GROUP_CONCAT()聚合括号内的结果，括号后跟的sale_property_value_id是返回结果的名称
         SELECT GROUP_CONCAT(sale_property_value_id SEPARATOR '|') sale_property_value_id,
                sku_id
         FROM sku_sale_property_value
