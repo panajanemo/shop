@@ -2,6 +2,7 @@ package com.atguigu.mapper;
 
 import com.atguigu.entity.ProductSalePropertyKey;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,4 +18,5 @@ public interface ProductSalePropertyKeyMapper extends BaseMapper<ProductSaleProp
 
     List<ProductSalePropertyKey> querySalePropertyByProductId(Long spuId);
 
+    List<ProductSalePropertyKey> getSpuSalePropertyAndSelected(@Param("productId") Long productId, @Param("skuId") Long skuId);
 }

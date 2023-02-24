@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/shop_core/shop_product/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_feign_client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_mbg" charset="UTF-8" />
@@ -22,6 +23,7 @@
     <file url="file://$PROJECT_DIR$/shop_utils/shop_web_utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_utils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop_utils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop_web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

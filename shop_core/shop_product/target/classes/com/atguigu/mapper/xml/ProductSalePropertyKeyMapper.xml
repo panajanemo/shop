@@ -17,5 +17,22 @@
             AND a.sale_property_key_id = b.sale_property_key_id
         WHERE a.product_id = #{spuId}
     </select>
+    <select id="getSpuSalePropertyAndSelected" resultMap="salePropertyMap">
+        SELECT a.id,
+               a.product_id,
+               a.sale_property_key_id,
+               a.sale_property_key_name,
+               b.id                         sale_property_value_id,
+               b.sale_property_value_name,
+               IF
+                   (c.sku_id IS NULL, 0, 1) is_selected
+        FROM product_sale_property_key a
+                 INNER JOIN product_sale_property_value b ON a.sale_property_key_id = b.sale_property_key_id
+            AND a.product_id = b.product_id
+                 LEFT JOIN sku_sale_property_value c ON b.id = c.sale_property_value_id
+            AND c.sku_id = #{skuId}
+        WHERE a.product_id = #{productId}
+        order by b.sale_property_key_id, b.id
+    </select>
 
 </mapper>
