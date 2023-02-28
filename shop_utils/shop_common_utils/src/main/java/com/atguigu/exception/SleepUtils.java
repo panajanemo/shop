@@ -8,4 +8,12 @@ public class SleepUtils {
             e.printStackTrace();
         }
     }
+
+    public static void millis(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

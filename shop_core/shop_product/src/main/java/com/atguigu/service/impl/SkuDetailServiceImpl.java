@@ -1,5 +1,6 @@
 package com.atguigu.service.impl;
 
+import com.atguigu.constant.RedisConst;
 import com.atguigu.entity.ProductSalePropertyKey;
 import com.atguigu.entity.SkuImage;
 import com.atguigu.entity.SkuInfo;
@@ -10,11 +11,13 @@ import com.atguigu.service.SkuImageService;
 import com.atguigu.service.SkuInfoService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author panajanemo
@@ -38,6 +41,9 @@ SkuDetailServiceImpl implements SkuDetailService {
     @Autowired
     private ProductSalePropertyKeyMapper salePropertyKeyMapper;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     /**
      * @param skuId
      * @return SkuInfo
@@ -47,12 +53,34 @@ SkuDetailServiceImpl implements SkuDetailService {
      */
     @Override
     public SkuInfo getSkuInfo(Long skuId) {
+        //SkuInfo skuInfo = getSkuInfoFromDB(skuId);
+        SkuInfo skuInfo = getSkuInfoFromRedis(skuId);
+        return skuInfo;
+    }
+
+    private SkuInfo getSkuInfoFromRedis(Long skuId) {
+        //sku:24:info
+        String cacheKey= RedisConst.SKUKEY_PREFIX+skuId+RedisConst.SKUKEY_SUFFIX;
+        //从缓存中查询数据
+        SkuInfo skuInfoFromRedis =(SkuInfo)redisTemplate.opsForValue().get(cacheKey);
+        //如果缓存不为空
+        if(skuInfoFromRedis==null){
+            SkuInfo skuInfoDb = getSkuInfoFromDB(skuId);
+            //把数据放入缓存
+            redisTemplate.opsForValue().set(cacheKey,skuInfoDb,RedisConst.SKUKEY_TIMEOUT, TimeUnit.SECONDS);
+            return skuInfoDb;
+        }
+        //如果缓存为空
+        return skuInfoFromRedis;
+    }
+
+    private SkuInfo getSkuInfoFromDB(Long skuId) {
         //1.查询商品基本信息
         SkuInfo skuInfo = skuInfoService.getById(skuId);
         //2.查询商品图片信息
-        if (skuInfo != null) {
+        if(skuInfo!=null){
             QueryWrapper<SkuImage> wrapper = new QueryWrapper<>();
-            wrapper.eq("sku_id", skuId);
+            wrapper.eq("sku_id",skuId);
             List<SkuImage> skuImageList = skuImageService.list(wrapper);
             skuInfo.setSkuImageList(skuImageList);
         }
@@ -77,9 +105,18 @@ SkuDetailServiceImpl implements SkuDetailService {
 
     }
 
+    /**
+     * @param productId
+     * @param skuId
+     * @return List<ProductSalePropertyKey>
+     * @description sku对应的销售属性(一份)所有的销售属性(全份)
+     * @author panajanemo
+     * @time 2023/2/25 21:23
+     */
+
     @Override
     public List<ProductSalePropertyKey> getSpuSalePropertyAndSelected(Long productId, Long skuId) {
-        return salePropertyKeyMapper.getSpuSalePropertyAndSelected(productId,skuId);
+        return salePropertyKeyMapper.getSpuSalePropertyAndSelected(productId, skuId);
     }
 
 }
