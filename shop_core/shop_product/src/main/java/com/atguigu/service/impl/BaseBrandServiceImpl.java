@@ -1,11 +1,13 @@
 package com.atguigu.service.impl;
 
 import com.atguigu.entity.BaseBrand;
+import com.atguigu.exception.SleepUtils;
 import com.atguigu.mapper.BaseBrandMapper;
 import com.atguigu.service.BaseBrandService;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.atguigu.exception.SleepUtils;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
@@ -297,8 +299,6 @@ public class BaseBrandServiceImpl extends ServiceImpl<BaseBrandMapper, BaseBrand
             redisScript.setScriptText(luaScript);
             redisScript.setResultType(Long.class);
             redisTemplate.execute(redisScript, Arrays.asList("lock"), token);
-            //擦屁股 防止内存泄漏
-            threadMap1.remove(Thread.currentThread());
         } else {
             //自旋 目的是为了拿锁
             while (true) {
@@ -316,7 +316,7 @@ public class BaseBrandServiceImpl extends ServiceImpl<BaseBrandMapper, BaseBrand
     }
 
     /**
-     * @description 分布式锁优化四，解决内存泄漏问题
+     * @description 分布式锁优化四，threadMap->threadLocal，同时解决内存泄漏
      * 但没有自动续期的功能
      * @param
      * @author panajanemo
@@ -324,14 +324,13 @@ public class BaseBrandServiceImpl extends ServiceImpl<BaseBrandMapper, BaseBrand
      */
     //
     ThreadLocal<String> threadLocal = new ThreadLocal<>();
-    @Override
-    public void setNum() {
+    public void setNum10() {
         //还有操很多作要做 去执行查询其他逻辑 查缓存等等业务 1000行
         String token = threadLocal.get();
         boolean accquireLock = false;
         //第一次来 还没有参与自旋
         if (token == null) {
-            token = UUID.randomUUID().toString();
+            token = UUID.randomUUID().toString();                                       //没有自动续期
             accquireLock = redisTemplate.opsForValue().setIfAbsent("lock", token, 30, TimeUnit.MINUTES);
         } else {
             //代表已经拿到锁了
@@ -360,5 +359,26 @@ public class BaseBrandServiceImpl extends ServiceImpl<BaseBrandMapper, BaseBrand
             }
             setNum();
         }
+    }
+
+    /**
+     * @description redisson测试
+     * @author panajanemo
+     * @time 2023/2/28 21:49
+     */
+
+    @Autowired
+    private RedissonClient redissonClient;
+    @Override
+    public void setNum() {
+        RLock lock = redissonClient.getLock("lock");
+        //加锁
+        lock.lock();
+        try {
+            doBusiness();
+        }finally {
+            lock.unlock();
+        }
+
     }
 }

@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5d4a27-1b21-4ff6-b82b-95407f4eef37" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/BaseBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/BaseBrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/SkuDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/controller/SkuDetailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/BaseBrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/BaseBrandServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/SkuDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/src/main/java/com/atguigu/service/impl/SkuDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/SkuSalePropertyValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/mapper/xml/SkuSalePropertyValueMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/BaseBrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/BaseBrandServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/SkuDetailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_core/shop_product/target/classes/com/atguigu/service/impl/SkuDetailServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_utils/shop_common_utils/src/main/java/com/atguigu/exception/SleepUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop_utils/shop_common_utils/src/main/java/com/atguigu/exception/SleepUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_utils/shop_common_utils/target/classes/com/atguigu/exception/SleepUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop_utils/shop_common_utils/target/classes/com/atguigu/exception/SleepUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_utils/shop_core_utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop_utils/shop_core_utils/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,27 +374,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8.0_211&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/ideaProject/shop_parent/shop_core/shop_product/src/main/java/com/atguigu/controller&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.59153634&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;50e9e103b29d75d032fb7b7d70876b73&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8.0_211",
+    "last_opened_file_path": "E:/ideaProject/shop_parent/shop_utils/shop_core_utils/src/main/java/com/atguigu",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.59153634",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "a81bc44f3c04dc73b1f232f724e95747",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -401,11 +403,11 @@
       <recent name="com.atguigu.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaProject\shop_parent\shop_utils\shop_core_utils\src\main\java\com\atguigu" />
+      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\test\java\com\atguigu" />
+      <recent name="E:\ideaProject\shop_parent\shop_utils\shop_core_utils\src\main\java\com\atguigu\config" />
       <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\java\com\atguigu\controller" />
       <recent name="E:\ideaProject\shop_parent\shop_feign_client\src\main\java" />
-      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\java\com\atguigu" />
-      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\test\java\com\atguigu" />
-      <recent name="E:\ideaProject\shop_parent\shop_core\shop_product\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ideaProject\shop_parent\shop_web\src\main\resources" />
@@ -426,7 +428,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductApplication">
+  <component name="RunManager" selected="JUnit.BloomTest">
+    <configuration name="BloomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop_product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.BloomTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="shop_gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.GatewayApplication" />
@@ -484,33 +501,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="shop_web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.WebApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Spring Boot.ProductApplication8001" />
+      <item itemvalue="JUnit.BloomTest" />
       <item itemvalue="Spring Boot.ProductApplication8002" />
-      <item itemvalue="Spring Boot.WebApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ProductApplication" />
+      <item itemvalue="Spring Boot.ProductApplication8001" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.WebApplication" />
-        <item itemvalue="Spring Boot.ProductApplication8002" />
-        <item itemvalue="Spring Boot.ProductApplication" />
         <item itemvalue="Spring Boot.ProductApplication8001" />
+        <item itemvalue="Spring Boot.ProductApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ProductApplication8002" />
+        <item itemvalue="JUnit.BloomTest" />
       </list>
     </recent_temporary>
   </component>
@@ -565,6 +569,13 @@
       <workItem from="1677244569803" duration="4064000" />
       <workItem from="1677327383507" duration="5204000" />
       <workItem from="1677478752515" duration="14209000" />
+      <workItem from="1677553569293" duration="14061000" />
+      <workItem from="1677636661152" duration="3179000" />
+      <workItem from="1677676024553" duration="869000" />
+      <workItem from="1677683161876" duration="766000" />
+      <workItem from="1677688809637" duration="1868000" />
+      <workItem from="1677726688604" duration="5841000" />
+      <workItem from="1677832411827" duration="5751000" />
     </task>
     <servers />
   </component>

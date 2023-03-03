@@ -12,12 +12,14 @@
         <module name="shop_common_utils" />
         <module name="shop_model" />
         <module name="shop_core_utils" />
-        <module name="shop_feign_client" />
         <module name="shop_mbg" />
         <module name="shop_web" />
         <module name="shop_product" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop_feign_client" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

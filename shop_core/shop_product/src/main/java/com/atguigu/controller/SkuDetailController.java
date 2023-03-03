@@ -1,6 +1,7 @@
 package com.atguigu.controller;
 
 
+import com.atguigu.cache.ShopCache;
 import com.atguigu.entity.BaseCategoryView;
 import com.atguigu.entity.ProductSalePropertyKey;
 import com.atguigu.entity.SkuInfo;
@@ -37,11 +38,13 @@ public class SkuDetailController {
     private SkuInfoService skuInfoService;
 
     //1.根据商品skuId查询商品的基本信息
+    @ShopCache(prefix="skuInfo",enableBloom=true)
     @GetMapping("getSkuInfo/{skuId}")
     public SkuInfo getSkuInfo(@PathVariable Long skuId){
         return skuDetailService.getSkuInfo(skuId);
     }
     //2.根据三级分类id查询商品的分类信息 //select * from base_category_view a where a.category3_id=11
+    @ShopCache(prefix="categoryView",enableBloom=false)
     @GetMapping("getCategoryView/{category3Id}")
     public BaseCategoryView getCategoryView(@PathVariable Long category3Id){
         return categoryViewService.getById(category3Id);
